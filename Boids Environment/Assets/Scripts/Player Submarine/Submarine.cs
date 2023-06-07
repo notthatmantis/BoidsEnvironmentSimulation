@@ -16,7 +16,7 @@ public class Submarine : MonoBehaviour
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(horizontal, Input.GetAxisRaw("Mouse Y"), vertical).normalized;
+        Vector3 direction = new Vector3(horizontal, vertical, 0f).normalized;
 
         if(direction.magnitude >= 0.1f)
         {
